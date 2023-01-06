@@ -1,0 +1,83 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Unbounded", cursive;
+}
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(10, 30, 200, 1) 100%, rgba(2, 169, 227, 1) 100%, rgba(2, 180, 234, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+.accordion-container {
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+
+}
+
+.accordion {
+    background-color: transparent;
+    border: 2px solid rgb(13, 16, 13);
+    border-radius: 30px;
+    color: rgb(252, 249, 249);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    height: fit-content;
+    border: 2px solid white;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    margin: 4px;
+
+}
+
+.active,
+.accordion:hover {
+    background-color: rgb(6, 6, 6);
+    border: 2px solid black;
+
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+
+
+}
+
+.panel li a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+
+
+}
+
+.panel li {
+    list-style-type: none;
+    padding: 5px;
+
+}
+
+.panel a:hover {
+    border-bottom: 2px solid black;
+
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .accordion-container {
+        width: 95%;
+        margin: auto;
+        padding: 5px;
+    }
+}
+
