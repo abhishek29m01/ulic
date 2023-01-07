@@ -1,10 +1,10 @@
+ @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@500&family=Unbounded&display=swap'); 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Unbounded&display=swap");
 
 /* body{
     background-color: lawngreen;
@@ -15,7 +15,7 @@ nav {
   font-size: 17px;
   color: white;
   font-weight: bold;
-  font-family: "Unbounded", cursive;
+  font-family: nunito,"unbounded";
 }
 
 /* navbar background color changing code */
@@ -97,7 +97,7 @@ li .dropdown-item {
   );
   display: flex;
   flex-direction: column;
-  font-family: "Unbounded", cursive;
+  font-family:"unbounded" nunito;
   /* height:;
     overflow-y: hidden; */
 }
@@ -116,7 +116,7 @@ li .dropdown-item {
     rgba(2, 180, 234, 1) 100%,
     rgba(0, 212, 255, 1) 100%
   );
-  font-family: "Unbounded", cursive;
+  font-family: "Unbounded", nunito;
 }
 
 .main-box h2 {
@@ -215,7 +215,7 @@ li .dropdown-item {
   background-color: #151823;
   color: #fdfcfc7f;
   padding: 0;
-  font-family: "Unbounded", cursive;
+  font-family: "Unbounded", nunito;
   /* padding:10px 0;
     margin:0;
     box-sizing: border-box; */
@@ -288,7 +288,7 @@ li .dropdown-item {
   flex-direction: row;
 }
 .company_description {
-  font-family: "Unbounded", cursive;
+  font-family: "Unbounded", nunito;
   font-size: 1rem;
   color: white;
 }
