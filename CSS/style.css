@@ -214,6 +214,63 @@ li .dropdown-item {
   color: green;
 }
 
+
+/* styling for the center details */
+.cent_details{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  height:300px;
+  width:80%;
+  margin:auto;
+  /* background-color: lightyellow; */
+
+}
+
+.cent:hover{
+  background-color: green;
+  color:white;
+  transition-duration: 1s;
+  /* background-color:red; */
+  
+}
+
+
+.cent_A{
+  display:flex;  
+  margin-top: 20px;
+  /* help us to use align item and justify content property  */
+ 
+  width:100%;
+}
+
+.cent_B{
+  display:flex;
+  
+}
+
+.cent_B p{
+  font-weight: 1000;
+  font-size: 1.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 10px;
+}
+.cent_A img{
+  width:100px;
+  height:100px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  margin-left: auto;
+  margin-right: auto;
+  background-blend-mode: multiply;
+  
+  /* margin:20px 10rem 10px 10rem; */
+  
+}
+
+
 /* -----------STYLING FOR FOOTER IS STARTED FROM HERE------------ */
 
 .footer {
@@ -311,9 +368,29 @@ li .dropdown-item {
 
 /* -----------------above are footer styling--------------- */
 
+
+@media screen and (max-width:592px) {
+  .cent_details{
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+    height:fit-content;
+    width:100%;
+  }
+  
+}
+
 @media (max-width: 992px) {
   nav {
     height: fit-content;
+  }
+ 
+ 
+  .cent_B p{
+    font-size: 1rem;
+  }
+
+  .cent_details{
+    height:200px;
   }
 
   /* .main{
