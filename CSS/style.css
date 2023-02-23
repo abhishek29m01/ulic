@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@500&family=Unbounded&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Nunito:wght@500&family=Unbounded&display=swap');
 
 * {
   margin: 0;
@@ -270,6 +270,62 @@ li .dropdown-item {
   
 }
 
+/* -----------------------art gallery----------------------------- */
+
+#art-gallery{
+  margin:20px 5rem;
+  color: #0099cb;
+  border-bottom: 4px solid #0099cb;
+  width: fit-content;
+  font-family: ubantu;
+  font-weight: 600;
+
+}
+
+.student-art-gallery {
+  width: 90%;
+  margin: 20px auto ;
+  height: 200px;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+.student-art-gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.artImage {
+  min-width: 16.6%;
+  height: fit-content;
+  padding: 0px 3px;
+  border-radius: 10px;
+  /* border:1px solid black; */
+  position: relative;
+}
+
+.artImage p {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  color: white;
+  font-weight: bolder;
+  stroke: black;
+  font-size: 0.8rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.artImage img {
+  height: 200px;
+  width: 100%;
+  /* width:25%; */
+  border-radius: 10px;
+}
+
+
 
 /* -----------STYLING FOR FOOTER IS STARTED FROM HERE------------ */
 
@@ -369,6 +425,11 @@ li .dropdown-item {
 /* -----------------above are footer styling--------------- */
 
 
+@media (max-width: 1170px) {
+  .main-right button {
+    font-size: 18px;
+  }
+}
 
 @media (max-width: 992px) {
   nav {
@@ -446,13 +507,21 @@ li .dropdown-item {
     font-size: xx-large;
     padding-top: 10px;
   }
+ 
+ 
+  #art-gallery{
+    margin:20px 3rem;
+  }
+ 
 }
 
-@media (max-width: 1170px) {
-  .main-right button {
-    font-size: 18px;
+@media(max-width:900px) {
+    .artImage {
+    min-width: 33%;
   }
+
 }
+
 
 @media (max-width: 660px) {
   .main {
@@ -490,6 +559,20 @@ li .dropdown-item {
     grid-template-rows:1fr 1fr 1fr;
     height:fit-content;
     width:100%;
+  }
+ 
+ 
+  .student-art-gallery{
+    width:98%;
+  }
+
+  .artImage p{
+    left: 40%;
+    font-size: 0.7rem;
+  }
+
+  #art-gallery{
+    margin:20px 1rem;
   }
   
 }
