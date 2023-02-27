@@ -270,6 +270,87 @@ li .dropdown-item {
   
 }
 
+/* -------------------Nav nihal shikshan Ashray---------------------*/
+.latest-body {
+  background-color: rgb(238, 235, 235);
+  height: 600px;
+  padding-top: 50px;
+
+}
+
+#nav-nihal {
+  font-size: 2rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-weight: bolder;
+  margin-left: 8rem;
+  margin-bottom: 30px;
+}
+
+.latest {
+
+  width: 80%;
+  height: 400px;
+  /* margin-top: 50px; */
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  
+
+}
+
+.latest-left {
+  width: 50%;
+  /* margin-bottom: 20px; */
+
+
+}
+
+.latest-left img {
+  height: 400px;
+  width: 100%;
+  border-radius: 5px;
+  /* filter:opacity(2) ; */
+
+}
+
+.latest-right {
+  width: 50%;
+  background-color: white;
+  border-radius: 5px;
+  /* border:2px solid black; */
+  /* border:2px solid white; */
+}
+
+#about-navnihal {
+  color: #0099cb;
+  border-bottom: 4px solid #0099cb;
+  margin-left: 1.5rem;
+  width: fit-content;
+  font-family: ubantu;
+  font-weight: 600;
+
+}
+
+.list-nav-nihal {
+  margin-left: 3rem;
+  font-family: ubantu;
+  font-weight: bold;
+  list-style: disc;
+  /* padding-top: 20px; */
+
+}
+
+.list-nav-nihal li{
+  margin-top: 30px;
+
+}
+
+
 /* -----------------------art gallery----------------------------- */
 
 #art-gallery{
@@ -429,6 +510,14 @@ li .dropdown-item {
   .main-right button {
     font-size: 18px;
   }
+  
+  .latest {
+    width: 90%;
+  }
+
+  #nav-nihal {
+    margin-left: 4rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -508,7 +597,15 @@ li .dropdown-item {
     padding-top: 10px;
   }
  
- 
+  
+  .latest {
+    width: 98%;
+  }
+
+  #nav-nihal {
+    margin-left: .5rem;
+  }
+
   #art-gallery{
     margin:20px 3rem;
   }
@@ -516,6 +613,34 @@ li .dropdown-item {
 }
 
 @media(max-width:900px) {
+  
+  .latest {
+    width: 90%;
+    flex-direction: column;
+    height:fit-content;
+
+  }
+
+  .latest-body {
+    height: 110%;
+  }
+
+  .latest-left {
+    width: 100%;
+
+  }
+
+  .latest-right {
+    width:100%;
+    height:fit-content;
+    margin-bottom: 50px;
+    padding-top: 30px;
+  }
+
+  #nav-nihal {
+    margin-left: 2rem;
+    
+  }
     .artImage {
     min-width: 33%;
   }
@@ -560,7 +685,24 @@ li .dropdown-item {
     height:fit-content;
     width:100%;
   }
- 
+  
+  
+  #nav-nihal {
+    font-size: 1.5rem;
+  }
+
+  .latest {
+    width: 95%;
+  }
+  
+  
+  .latest-left{
+    height:300px;
+  }
+
+  .latest-left img{
+    height:300px;
+  }
  
   .student-art-gallery{
     width:98%;
